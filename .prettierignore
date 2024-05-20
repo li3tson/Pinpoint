@@ -1,0 +1,8 @@
+build/
+node_modules/
+static/
+assets/
+dist/
+.vscode/
+.DS_Store
+.gitignore
