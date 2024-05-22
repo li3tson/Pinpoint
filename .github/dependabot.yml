@@ -4,6 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "sunday"
     labels:
-      - "pnpm"
       - "dependencies"
