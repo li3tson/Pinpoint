@@ -18,28 +18,36 @@ const InformationPanel = ({ data }: PropType) => {
       <ul className='list'>
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.ipv4')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.ipv4')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.ip)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.city')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.city')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.city)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.state')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.state')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.region)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.country')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.country')}:`}
+            </span>&nbsp;
             <span>
               {FormatResponseData(`${data.country_name} ${data.emoji_flag}`)}
             </span>
@@ -48,35 +56,45 @@ const InformationPanel = ({ data }: PropType) => {
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.continent')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.continent')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.continent_name)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.currentTime')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.currentTime')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(currentTime.toLocaleString())}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.latitude')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.latitude')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.latitude.toFixed(6))}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.longitude')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.longitude')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.longitude.toFixed(6))}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.language')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.language')}:`}
+            </span>&nbsp;
             <span>
               {FormatResponseData(`${data.languages[0].name}
                 (${String(data.languages[0].code).toUpperCase()})`)}
@@ -86,7 +104,9 @@ const InformationPanel = ({ data }: PropType) => {
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.currency')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.currency')}:`}
+            </span>&nbsp;
             <span>
               {FormatResponseData(
                 `${data.currency.name} (${data.currency.code})`,
@@ -97,42 +117,54 @@ const InformationPanel = ({ data }: PropType) => {
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.ddd')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.ddd')}:`}
+            </span>&nbsp;
             <span>+{FormatResponseData(data.calling_code)}</span>
           </p>
         </li>
 
         {/* <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.asn')}:`}&nbsp;
+            <span className='text--emphasis'>
+            {`${t('home.informationPanel.asn')}:`}
+          </span>&nbsp;
             <span>{FormatResponseData(data.asn.name)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.asnDomain')}:`}&nbsp;
+            <span className='text--emphasis'>
+            {`${t('home.informationPanel.asnDomain')}:`}
+          </span>&nbsp;
             <span>{FormatResponseData(data.asn.domain)}</span>
           </p>
         </li> */}
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.tor')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.tor')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.threat.is_tor)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.proxy')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.proxy')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.threat.is_proxy)}</span>
           </p>
         </li>
 
         <li className='list__item'>
           <p className='item__text'>
-            {`${t('home.informationPanel.dataCenter')}:`}&nbsp;
+            <span className='text--emphasis'>
+              {`${t('home.informationPanel.dataCenter')}:`}
+            </span>&nbsp;
             <span>{FormatResponseData(data.threat.is_datacenter)}</span>
           </p>
         </li>

@@ -7,4 +7,9 @@ export const Wrapper = Styled.div`
   font-size: 1.1rem;
   line-height: 2.1rem;
   padding: 0.5rem 1rem 1rem 2rem;
+
+  .text--emphasis {
+    font-weight: bold;
+    color: ${({ theme }) => theme.colors.gray[800]};
+  }
 `
