@@ -4,8 +4,8 @@ import esTranslations from './es/translation'
 import frTranslations from './fr/translation'
 
 export default {
-  pt: ptTranslations,
-  en: enTranslations,
-  es: esTranslations,
-  fr: frTranslations,
+  'en': enTranslations,
+  'es': esTranslations,
+  'fr': frTranslations,
+  'pt': ptTranslations,
 }

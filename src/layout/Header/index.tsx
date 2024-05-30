@@ -10,6 +10,20 @@ const Header = () => {
   const { i18n } = useTranslation()
   const { t } = useTranslation()
 
+  const checkLanguage = (value: string) => {
+    if (value.includes('en')) {
+      return 'en-US'
+    } else if (value.includes('es')) {
+      return 'es-ES'
+    } else if (value.includes('fr')) {
+      return 'fr-FR'
+    } else if (value.includes('pt')) {
+      return 'pt-PT'
+    } else {
+      return ''
+    }
+  }
+
   return (
     <Wrapper>
       <div className='leftSide'>
@@ -33,13 +47,13 @@ const Header = () => {
           name='language'
           title={t('home.header.language.title')}
           className='rightSide__select rightSide__select--languages'
-          defaultValue={i18n.language}
+          defaultValue={checkLanguage(i18n.language)}
           onChange={async e => await i18n.changeLanguage(e.target.value)}
         >
-          <option value='en'>{t('home.header.language.english')}</option>
-          <option value='es'>{t('home.header.language.spanish')}</option>
-          <option value='fr'>{t('home.header.language.french')}</option>
-          <option value='pt'>{t('home.header.language.portuguese')}</option>
+          <option value='en-US'>{t('home.header.language.english')}</option>
+          <option value='es-ES'>{t('home.header.language.spanish')}</option>
+          <option value='fr-FR'>{t('home.header.language.french')}</option>
+          <option value='pt-PT'>{t('home.header.language.portuguese')}</option>
         </select>
       </div>
     </Wrapper>
