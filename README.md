@@ -9,35 +9,12 @@
 
 `Pinpoint` was initially designed for a more technical target audience, people who are aware of what an IP address is and what it is for.
 
-## :ballot_box_with_check: Requirements
-
-### Functional requirements
-
-| Requirement | Description |
-| --- | --- |
-| `FR001` | The system must allow the user to view the geographical location of the IP address on the map in real time. |
-| `FR002` | The system must allow the user to search by an IP address. |
-| `FR003` | The system must allow the user to change the page theme. |
-| `FR004` | The system must allow the user to change the page language. |
-
-### Non-functional requirements
-
-| Requirement | Description |
-| --- | --- |
-| `NF001` | The system must validate the searched IP address. |
-| `NF002` | The system should issue an error if the ip is invalid. |
-| `NF003` | The system must set the light theme as the default theme as soon as the user accesses the page. |
-| `NF004` | The system must set the browser's current language as the application's default language as soon as the user accesses the page. |
-| `NF005` | The system must show a loading when loading some information. |
-| `NF006` | The system should issue an error if it hears an error loading some information. |
-
-
 ## :package: Technologies
 
 - `Vite`
 - `React.js`
 - `TypeScript`
-- `@tanstack/react-query`
+- `TanStack Query`
 - `i18next`
 - `Axios`
 - `Zod`
