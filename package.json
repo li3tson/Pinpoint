@@ -32,7 +32,7 @@
     "react-hook-form": "^7.52.0",
     "react-i18next": "^14.1.2",
     "styled-components": "^6.1.11",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "^5.43.1",
