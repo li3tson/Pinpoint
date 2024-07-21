@@ -35,7 +35,7 @@
     "zustand": "^4.5.4"
   },
   "devDependencies": {
-    "@tanstack/eslint-plugin-query": "^5.43.1",
+    "@tanstack/eslint-plugin-query": "^5.51.12",
     "@types/leaflet": "^1.9.9",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
